@@ -1700,7 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e790082644efe6241bc7ebb05c9afeed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cooldown: 1
+  Cooldown: 0.1
   damage: 20
   range: 20
   strikeableMask:
@@ -2374,7 +2374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spawner: {fileID: 0}
-  maxHealth: 40
+  maxHealth: 100
   scoreValue: 10
   sinkSpeed: 2.5
   deathEffectTime: 2
@@ -2450,7 +2450,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1796066010
 GameObject:
@@ -2788,6 +2788,7 @@ GameObject:
   - component: {fileID: 1888378115}
   - component: {fileID: 1888378117}
   - component: {fileID: 1888378116}
+  - component: {fileID: 1888378123}
   - component: {fileID: 1888378121}
   - component: {fileID: 1888378120}
   - component: {fileID: 1888378119}
@@ -2936,6 +2937,19 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   damageImage: {fileID: 0}
   isInvulnerable: 0
+--- !u!135 &1888378123
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888378114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1941124426
 GameObject:
   m_ObjectHideFlags: 0
