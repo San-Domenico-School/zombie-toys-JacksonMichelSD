@@ -941,6 +941,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &632347333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7486706990686226526, guid: 5f8183a97ea9e4d208227f725506e1a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7486706990358038397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &632347336
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632347333}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ecd1d7b64d274d64ea89708845fc8e3b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 6931e596d67b34f8c8539eacdcae2e48, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &651088488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,6 +3227,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1880702389}
     m_Modifications:
+    - target: {fileID: 7486706989007362677, guid: 5f8183a97ea9e4d208227f725506e1a8,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 632347336}
+    - target: {fileID: 7486706989007362679, guid: 5f8183a97ea9e4d208227f725506e1a8,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 632347336}
     - target: {fileID: 7486706989007362686, guid: 5f8183a97ea9e4d208227f725506e1a8,
         type: 3}
       propertyPath: m_RootOrder
@@ -3261,5 +3297,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7486706990695594606, guid: 5f8183a97ea9e4d208227f725506e1a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f8183a97ea9e4d208227f725506e1a8, type: 3}
