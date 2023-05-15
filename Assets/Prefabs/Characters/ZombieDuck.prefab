@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8757631114074397266}
   - component: {fileID: 8757631114074397269}
   - component: {fileID: 8757631114074397268}
+  - component: {fileID: 1067493264707919367}
   - component: {fileID: 8757631114074397271}
   m_Layer: 9
   m_Name: ZombieDuck
@@ -36,7 +37,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8757631115343245168}
+  - {fileID: 7985085434361170329}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FrostDebuff: {fileID: 0}
   navMeshAgent: {fileID: 8757631114074397265}
-  animator: {fileID: 8757631114074397267}
+  animator: {fileID: 7985085434368140903}
   runAwayDistance: 10
 --- !u!114 &8757631114074397269
 MonoBehaviour:
@@ -140,7 +141,7 @@ MonoBehaviour:
   SlimeDebuff: {fileID: 0}
   timeBetweenAttacks: 1
   attackDamage: 20
-  animator: {fileID: 8757631114074397267}
+  animator: {fileID: 7985085434368140903}
 --- !u!114 &8757631114074397268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,15 +159,27 @@ MonoBehaviour:
   scoreValue: 20
   sinkSpeed: 2.5
   deathEffectTime: 2
-  deathClip: {fileID: 0}
-  hurtClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
+  hurtClip: {fileID: 8300000, guid: 02e6208ec76314158a9f548f51fe9f11, type: 3}
   enemyAttack: {fileID: 8757631114074397269}
   enemyMovement: {fileID: 8757631114074397266}
-  animator: {fileID: 8757631114074397267}
-  audioSource: {fileID: 0}
+  animator: {fileID: 7985085434368140903}
+  audioSource: {fileID: 8757631114074397271}
   capsuleCollider: {fileID: 8757631114074397278}
-  hitParticles: {fileID: 0}
+  hitParticles: {fileID: 19881454, guid: 1c3a4f54276893240b6224d53f76eef8, type: 3}
   isInvulnerable: 0
+--- !u!114 &1067493264707919367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757631114074397257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f38444ea7c94795b3bb7972f8082bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &8757631114074397271
 AudioSource:
   m_ObjectHideFlags: 0
@@ -176,9 +189,10 @@ AudioSource:
   m_GameObject: {fileID: 8757631114074397257}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1168554416469182414, guid: 0d34d53ea3c9649e1b4631688cfb40d6,
+    type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -263,86 +277,77 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &8757631115343245171
-GameObject:
+--- !u!1001 &7985085434360779527
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8757631115343245168}
-  - component: {fileID: 8757631115343245182}
-  - component: {fileID: 8757631115343245169}
-  m_Layer: 9
-  m_Name: Enemymodel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8757631115343245168
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8757631114074397270}
+    m_Modifications:
+    - target: {fileID: 100030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_Name
+      value: ZombieDuckModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: ccdf341a1f8cc4a15a86600ba929cac6,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffc1cce828542694b8004c32865149a5, type: 3}
+--- !u!4 &7985085434361170329 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 400030, guid: ffc1cce828542694b8004c32865149a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7985085434360779527}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757631115343245171}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8757631114074397270}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8757631115343245182
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!95 &7985085434368140903 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: ffc1cce828542694b8004c32865149a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7985085434360779527}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757631115343245171}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8757631115343245169
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757631115343245171}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 767f369015bad44aa9cd2cb5ca366ab9, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
