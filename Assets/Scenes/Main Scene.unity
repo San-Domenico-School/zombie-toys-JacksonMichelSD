@@ -661,6 +661,18 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &207661652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5150385184469368779, guid: 7f8bcb92818084ac49e1cf21da741390,
+    type: 3}
+  m_PrefabInstance: {fileID: 1638775229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940aef610363834b8225faaef44fa02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &231037370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3106,6 +3118,18 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &1726877935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5150385185432029189, guid: 7f8bcb92818084ac49e1cf21da741390,
+    type: 3}
+  m_PrefabInstance: {fileID: 1638775229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e0060c2dc100f4e83a7d76907a5091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1782207445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3173,6 +3197,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4953693975444466529, guid: 1b83e9c298aa44bfba852fd0709177c0,
+        type: 3}
+      propertyPath: slimeProjectile
+      value: 
+      objectReference: {fileID: 207661652}
+    - target: {fileID: 5373652032199638613, guid: 1b83e9c298aa44bfba852fd0709177c0,
+        type: 3}
+      propertyPath: stinkProjectile
+      value: 
+      objectReference: {fileID: 1726877935}
+    - target: {fileID: 7940861017780792654, guid: 1b83e9c298aa44bfba852fd0709177c0,
+        type: 3}
+      propertyPath: lightningHit
+      value: 
+      objectReference: {fileID: 2072721353}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b83e9c298aa44bfba852fd0709177c0, type: 3}
 --- !u!1001 &1822016751
@@ -3933,6 +3972,18 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &2072721353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5150385186312776505, guid: 7f8bcb92818084ac49e1cf21da741390,
+    type: 3}
+  m_PrefabInstance: {fileID: 1638775229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f1b143b9e89f14e84dc3a5dc89edda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083357658
 GameObject:
   m_ObjectHideFlags: 0
